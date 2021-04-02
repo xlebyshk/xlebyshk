@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.menu.MenuFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4F4F4">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/menu_fragment_guidelineVerticalLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/menu_fragment_guidelineVerticalRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/menu_fragment_guidelineHorizontalUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/menu_fragment_guidelineHorizontalDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <TextView
+            android:id="@+id/menu_fragment_title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_fragment_title_text"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/menu_fragment_guidelineHorizontalUp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/menu_fragment_button_football"
+            style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_corners"
+            android:text="@string/menu_fragment_football_button_text"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:backgroundTint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/menu_fragment_guidelineHorizontalDown"
+            app:layout_constraintEnd_toStartOf="@+id/menu_fragment_guidelineVerticalRight"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/menu_fragment_guidelineVerticalLeft"
+            app:layout_constraintTop_toTopOf="@+id/menu_fragment_guidelineHorizontalUp"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <Button
+            android:id="@+id/menu_fragment_button_basketball"
+            style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_corners"
+            android:text="@string/menu_fragment_basketball_button_text"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:backgroundTint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/menu_fragment_guidelineHorizontalDown"
+            app:layout_constraintEnd_toStartOf="@+id/menu_fragment_guidelineVerticalRight"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/menu_fragment_guidelineVerticalLeft"
+            app:layout_constraintTop_toTopOf="@+id/menu_fragment_guidelineHorizontalUp"
+            app:layout_constraintVertical_bias="0.4" />
+
+        <Button
+            android:id="@+id/menu_fragment_button_tennis"
+            style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_corners"
+            android:text="@string/menu_fragment_tennis_button_text"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:backgroundTint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/menu_fragment_guidelineHorizontalDown"
+            app:layout_constraintEnd_toStartOf="@+id/menu_fragment_guidelineVerticalRight"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/menu_fragment_guidelineVerticalLeft"
+            app:layout_constraintTop_toTopOf="@+id/menu_fragment_guidelineHorizontalUp"
+            app:layout_constraintVertical_bias="0.7" />
+
+        <Button
+            android:id="@+id/menu_fragment_button_handball"
+            style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_corners"
+            android:text="@string/menu_fragment_handball_button_text"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:backgroundTint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/menu_fragment_guidelineHorizontalDown"
+            app:layout_constraintEnd_toStartOf="@+id/menu_fragment_guidelineVerticalRight"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/menu_fragment_guidelineVerticalLeft"
+            app:layout_constraintTop_toTopOf="@+id/menu_fragment_guidelineHorizontalUp"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
